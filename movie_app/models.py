@@ -14,7 +14,7 @@ class Movie(models.Model):
     description = models.TextField()
     duration = models.FloatField()
     directors = models.ForeignKey(Director, on_delete=models.CASCADE,
-                                  null=True,related_name='movies')
+                                  null=True, related_name='movies')
 
 
 
